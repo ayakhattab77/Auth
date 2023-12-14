@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="subcontainer">
+                <h1>Do you want to log out?</h1>
+                <a href="logout"><input type="button" value="Yes" style="font-weight: bolder; text-emphasis-color: red;"></a>
+                <a href="profile"><input type="button" value="No" style="background-color: gainsboro; "></a>
+            </div>
+        </div>
+    </body>
+</html>
