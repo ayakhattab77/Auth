@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <form method="post" action="/login" class="subcontainer">
+                <ul id="error">
+                    <% if (locals.errors) {%>
+                        <% for(let error of errors) { %>
+                            <li><%=error.msg%></li>
+                            <% } %>
+                    <%}%>  
+                </ul>
+                <div class="field">
+                    <label for="handler">Handler (Username or Email) </label>
+                    <input type="text" name="handler" id="handler">
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <input type="submit" value="Login">
+                <a href="signup"><input type="button" value="New User?"></a>
+            </form>
+        </div>
+    </body>
+</html>

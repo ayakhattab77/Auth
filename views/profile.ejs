@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="subcontainer">
+                <div id="flexcont">
+                    <div id="info">
+                        Name: <%=name%> <br>
+                        E-mail: <%=email%> <br> 
+                        Username: <%=username%> <br>
+                        Phone Number: <%=mobile%>
+                    </div>
+                    <div id="imgcont">
+                        <img class="img" src="<%=username%>.png" onerror="this.src = '1.jpg'">
+                    </div>
+                </div>
+                <a href="changepassword"><input type="button" value="Change Password"></a>
+                <a href="logout"><input type="button" value="Log Out"></a>
+            </div>
+        </div>
+    </body>
+</html>
